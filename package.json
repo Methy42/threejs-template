@@ -1,0 +1,54 @@
+{
+    "name": "threejs-template",
+    "version": "1.0.0",
+    "description": "A template for three.js projects",
+    "scripts": {
+        "pack:dev": "rollup --config rollup.config.ts --environment NODE_ENV:development --configPlugin typescript",
+        "pack:pro": "rollup --config rollup.config.ts --environment NODE_ENV:production --configPlugin typescript",
+        "watch": "rollup --config rollup.config.ts --environment NODE_ENV:development --configPlugin typescript --watch --bundleConfigAsCjs",
+        "build": "npm run pack:pro",
+        "start": "npm run watch"
+    },
+    "repository": "https://github.com/Methy42/threejs-template",
+    "keywords": [
+        "Electron",
+        "quick",
+        "start",
+        "tutorial",
+        "demo",
+        "typescript"
+    ],
+    "author": "Methy42",
+    "license": "MIT",
+    "devDependencies": {
+        "@rollup/plugin-alias": "^5.0.1",
+        "@rollup/plugin-commonjs": "^25.0.3",
+        "@rollup/plugin-html": "^1.0.3",
+        "@rollup/plugin-json": "^6.0.0",
+        "@rollup/plugin-node-resolve": "^15.2.3",
+        "@rollup/plugin-replace": "^5.0.2",
+        "@rollup/plugin-typescript": "^11.1.2",
+        "@rollup/plugin-url": "^8.0.1",
+        "@types/node": "^20.4.5",
+        "@types/opentype.js": "^1.3.7",
+        "@types/react-dom": "^18.2.7",
+        "@types/rollup-plugin-css-only": "^3.1.0",
+        "@types/three": "^0.156.0",
+        "@typescript-eslint/eslint-plugin": "^4.33.0",
+        "@typescript-eslint/parser": "^4.33.0",
+        "eslint": "^7.32.0",
+        "postcss": "^8.4.31",
+        "rollup": "^3.27.0",
+        "rollup-plugin-postcss": "^4.0.2",
+        "rollup-plugin-vue": "^6.0.0",
+        "sass": "^1.69.5",
+        "tslib": "^2.6.1",
+        "typescript": "^4.8.3"
+    },
+    "dependencies": {
+        "opentype.js": "^1.3.4",
+        "three": "^0.156.1",
+        "vue": "^3.3.8",
+        "vue-router": "^4.2.5"
+    }
+}
